@@ -2,7 +2,7 @@
   <h3 class="text-light">GifsApp</h3>
   <hr class="text-light">
   <div  *ngFor="let newtag of tagsHistory" class="list-group list-reset">
-    <button class="list-group-item list-group-item-action">
+    <button class="list-group-item list-group-item-action" (click)="searchTag(newtag)">
       {{newtag | titlecase}}
     </button>
   </div>
